@@ -1,71 +1,84 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>非同凡想 | Coole的个人主页</title>
-<link rel="shortcut icon" href="www.mx1980.cn/favicon.ico">
-<link rel="stylesheet" href="www.mx1980.cn/styles/main.css">
+    <meta charset="utf-8" >
 
+<title>非同凡想 | Coole的个人主页</title>
+<meta name="description" content="求索   感悟   新知   记录">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="http://www.mx1980.cn/favicon.ico">
+<link rel="stylesheet" href="http://www.mx1980.cn/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="www.mx1980.cn">
-  <img class="avatar" src="www.mx1980.cn/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Coole的个人主页
-  </h1>
-  <p class="site-description">
-    求索   感悟   新知   记录
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://www.mx1980.cn">
+        <img src="http://www.mx1980.cn/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Coole的个人主页</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="www.mx1980.cn" class="menu" target="_blank">
-          首页
-        </a>
+        
+          <a href="www.mx1980.cn" class="site-nav" target="_blank">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求索   感悟   新知   记录
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              非同凡想
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-04-02 ·
-              </time>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">非同凡想</h2>
+            <div class="post-date">2019-04-02</div>
+            
             <div class="post-content">
               <p>美好的事情总会发生，只是希望不要来的太迟！</p>
 <!-- more -->
@@ -74,31 +87,53 @@
 <p>非同凡想<br>在此向那些疯狂的人们致敬！<br>他们我行我素，桀骜不驯，惹是生非。<br>就像方孔中的圆钉一样。<br>他们以不同的方式察看世界。<br>他们不循规蹈矩，不安于现状。<br>你可以质疑他们，反对他们赞美他们或贬低他们。<br>但是你唯独不能忽视他们。<br>因为他们改变了世界。他们推进了人类向前发展。<br>有人视他们为疯子，而我们却视他们为天才。<br>因为，只有疯狂到认为他们能改变世界的人才能真正地改变世界！</p>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="http://www.mx1980.cn/tag/life_thinking" class="tag">
+                    生活
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="http://www.mx1980.cn/post/about">
+                  <h3 class="post-title">
+                    关于
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="www.mx1980.cn/post/about">
-              <h3 class="post-title">
-                关于
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>

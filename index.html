@@ -1,114 +1,142 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Coole的个人主页</title>
-<link rel="shortcut icon" href="www.mx1980.cn/favicon.ico">
-<link rel="stylesheet" href="www.mx1980.cn/styles/main.css">
+    <meta charset="utf-8" >
 
+<title>Coole的个人主页</title>
+<meta name="description" content="求索   感悟   新知   记录">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="http://www.mx1980.cn/favicon.ico">
+<link rel="stylesheet" href="http://www.mx1980.cn/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="www.mx1980.cn">
-  <img class="avatar" src="www.mx1980.cn/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    Coole的个人主页
-  </h1>
-  <p class="site-description">
-    求索   感悟   新知   记录
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://www.mx1980.cn">
+        <img src="http://www.mx1980.cn/images/avatar.png" class="site-logo">
+        <h1 class="site-title">Coole的个人主页</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="www.mx1980.cn" class="menu" target="_blank">
-          首页
-        </a>
+        
+          <a href="www.mx1980.cn" class="site-nav" target="_blank">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      求索   感悟   新知   记录
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="www.mx1980.cn/post/fei-tong-fan-xiang">
-        <h2 class="post-title">非同凡想</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-02 ·
-        </time>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>美好的事情总会发生，只是希望不要来的太迟！</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="www.mx1980.cn/post/about">
-        <h2 class="post-title">关于</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-01 ·
-        </time>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <p>这是创建在Github pages上的个人主页<br>我的CSDN技术博客：<a href="https://blog.csdn.net/wonder_coole">https://blog.csdn.net/wonder_coole</a><br>Sina博客：<a href="http://blog.sina.com.cn/chnjun">http://blog.sina.com.cn/chnjun</a></p>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://www.mx1980.cn/post/fei-tong-fan-xiang">
+                  <h2 class="post-title">非同凡想</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-02
+                </div>
+                <div class="post-abstract">
+                  <p>美好的事情总会发生，只是希望不要来的太迟！</p>
 
-      </di>
-    </article>
-  
-</div>
+                </div>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="http://www.mx1980.cn/post/about">
+                  <h2 class="post-title">关于</h2>
+                </a>
+                <div class="post-date">
+                  2019-04-01
+                </div>
+                <div class="post-abstract">
+                  <p>这是创建在Github pages上的个人主页<br>我的CSDN技术博客：<a href="https://blog.csdn.net/wonder_coole">https://blog.csdn.net/wonder_coole</a><br>Sina博客：<a href="http://blog.sina.com.cn/chnjun">http://blog.sina.com.cn/chnjun</a></p>
 
-    
-        <div class="pagination-container">
+                </div>
+              </div>
+              
+            </article>
+          
+
+          <div class="pagination-container">
   
   
 </div>
 
-    
-        <div class="site-footer">
-  Powered by Hve Notes
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
+        </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
