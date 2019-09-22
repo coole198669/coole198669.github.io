@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://www.mx1980.cn</id>
+    <title>Coole的个人主页</title>
+    <updated>2019-09-22T09:44:14.647Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://www.mx1980.cn"/>
+    <link rel="self" href="http://www.mx1980.cn/atom.xml"/>
+    <subtitle>求索   感悟   新知   记录</subtitle>
+    <logo>http://www.mx1980.cn/images/avatar.png</logo>
+    <icon>http://www.mx1980.cn/favicon.ico</icon>
+    <rights>All rights reserved 2019, Coole的个人主页</rights>
+    <entry>
+        <title type="html"><![CDATA[非同凡想]]></title>
+        <id>http://www.mx1980.cn/post/fei-tong-fan-xiang</id>
+        <link href="http://www.mx1980.cn/post/fei-tong-fan-xiang">
+        </link>
+        <updated>2019-04-02T01:53:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>美好的事情总会发生，只是希望不要来的太迟！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>美好的事情总会发生，只是希望不要来的太迟！</p>
+<!-- more -->
+<p>Think different</p>
+<p>Here's to the crazy ones.<br>
+The misfits. The rebels. The troublemakers.<br>
+The round pegs in the square holes.<br>
+The ones who see things differently.<br>
+They're not fond of rules. And they have no respect for the status quo.<br>
+You can quote them, disagree with them, glorify or vilify them.<br>
+But the only thing you can't do is ignore them.<br>
+Because they change things. They push the human race forward.<br>
+And while some may see them as the crazy ones, we see genius.<br>
+Because the people who are crazy enough to think they can change the world, are the ones who do.</p>
+<p>非同凡想<br>
+在此向那些疯狂的人们致敬！<br>
+他们我行我素，桀骜不驯，惹是生非。<br>
+就像方孔中的圆钉一样。<br>
+他们以不同的方式察看世界。<br>
+他们不循规蹈矩，不安于现状。<br>
+你可以质疑他们，反对他们赞美他们或贬低他们。<br>
+但是你唯独不能忽视他们。<br>
+因为他们改变了世界。他们推进了人类向前发展。<br>
+有人视他们为疯子，而我们却视他们为天才。<br>
+因为，只有疯狂到认为他们能改变世界的人才能真正地改变世界！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>http://www.mx1980.cn/post/about</id>
+        <link href="http://www.mx1980.cn/post/about">
+        </link>
+        <updated>2019-04-01T11:09:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>欢迎来的我的主页空间, 这里聚合了我的博客链接：<br>
+Coole的图片站：http://johnc.lofter.com/  这里主要放一些自己拍的趣图<br>
+生活闲谈博客：http://hicoole.lofter.com/ 这里是一些无聊时的闲言碎语<br>
+CSDN技术博客：https://blog.csdn.net/wonder_coole 嗯，也得认真聊聊技术！😄</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>欢迎来的我的主页空间, 这里聚合了我的博客链接：<br>
+Coole的图片站：http://johnc.lofter.com/  这里主要放一些自己拍的趣图<br>
+生活闲谈博客：http://hicoole.lofter.com/ 这里是一些无聊时的闲言碎语<br>
+CSDN技术博客：https://blog.csdn.net/wonder_coole 嗯，也得认真聊聊技术！😄</p>
+<!-- more -->
+<p>这是利用Github pages创建的个人主页空间。<br>
+虽然现在博客潮流早已日渐式微，微信微博大行其道，但我觉得写博客，仍然是记录生活学习工作的最好方式。<br>
+感谢'Hve Notes' 这个很好的静态页面产生工具，让我可以摆脱比较商业化的host托管，利用Github来部署个人空间。</p>
+]]></content>
+    </entry>
+</feed>
